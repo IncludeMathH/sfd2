@@ -256,6 +256,9 @@ class Trainer:
         return np.mean(epoch_losses)
 
     def forward_backward(self, inputs):
+        """
+        The core part of this code. 
+        """
         image1 = inputs.pop("img1")  # torch.mean(inputs.pop("img1"), dim=1, keepdim=True)
         image2 = inputs.pop("img2")  # torch.mean(inputs.pop("img2"), dim=1, keepdim=True)
         aflow = inputs["aflow"]

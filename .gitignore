@@ -13,3 +13,6 @@ run_r2d2.sh
 nets/semseg/checkpoints
 .nfs*
 log*
+work_dirs/*
+*.pth
+*.zip
